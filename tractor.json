@@ -1,0 +1,96 @@
+
+{
+
+    "Tractors" :[
+        {
+            "id": "0",
+            "name": "Tractor 0",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract0.png"
+        },
+        {
+            "id": "1",
+            "name": "Tractor 1",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract1.png"
+        },
+        {
+            "id": "2",
+            "name": "Tractor 2",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract2.png"
+        },
+        {
+            "id": "3",
+            "name": "Tractor 3",
+            "price": "#670,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract3.png"
+        },
+        {
+            "id": "4",
+            "name": "Tractor 4",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract4.png"
+        },
+        {
+            "id": "5",
+            "name": "Tractor 5",
+            "price": "#300,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract5.png"
+        },
+        {
+            "id": "6",
+            "name": "Tractor 6",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract6.png"
+        },
+        {
+            "id": "7",
+            "name": "Tractor 7",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract7.png"
+        },
+        {
+            "id": "8",
+            "name": "Tractor 8",
+            "price": "#240,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract8.png"
+        },
+        {
+            "id": "9",
+            "name": "Tractor 9",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract9.png"
+        },
+        {
+            "id": "10",
+            "name": "Tractor 10",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract10.png"
+        },
+        {
+            "id": "11",
+            "name": "Tractor 11",
+            "price": "#600,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract11.png"
+        },
+        {
+            "id": "12",
+            "name": "Tractor 12",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract12.png"
+        },
+        {
+            "id": "13",
+            "name": "Tractor 13",
+            "price": "#500,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract13.png"
+        },
+        {
+            "id": "14",
+            "name": "Tractor 14",
+            "price": "#700,000",
+            "image": "https://erubamigodstime.github.io/Tractor-proj/images/tract14.png"
+        }
+    ]
+}
