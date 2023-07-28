@@ -1,0 +1,20 @@
+@media only screen and (min-width: 35rem){
+    nav button {
+        display: none;
+    }
+    nav ul#navLink{
+        margin-left: 2vw;
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    nav ul li a {
+        border: none; 
+
+    }
+    nav ul li a{
+        font-size: 1.1rem;
+    }
+   
+}
