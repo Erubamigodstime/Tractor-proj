@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="styles/small.css">
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/large.css">
-    <script src="scripts/tractor.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
+    <script src="https://kit.fontawesome.com/d13ead34ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -19,11 +21,49 @@
                 <li><a href="">Resources</a></li>
                 <li><a href="">Article</a></li>           
             </ul>
-        </nav>
-        <div id="cart">
-
-        </div>
-              
+        </nav>              
     </header>
+    <main>
+        <div id="cart-main"  class="cart-main">
+            <div class="text" id="text">
+                <button class="btt" onclick="document.getElementById('form-sect').style.display='block'"> Check Out </button>
+                <button> Clear Cart</button>
+
+            </div>
+            <div id="tractor-carts">
+    
+            </div>
+            <div class="form-sect  animate" id="form-sect" >
+                <form action="">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label class="top">First Name<span class="star">*</span> <input type="text"  name="fname" required></label>
+                        <label class="top">Last Name <span class="star">*</span> <input type="text"  name="lname" required></label>
+                        <label class="top">Email <span class="star">*</span> <input type="email"  name="email" required  placeholder="someone@gmail.com"></label>
+                        <label class="top">phone <input type="tel"  name="phone" required  placeholder="123455553321"></label>
+                        <div class="remember-me">
+                        <label for="remember">Remember Me:</label>
+                        <div class="toggle">
+                            <input class="box" type="checkbox" id="remember" name="remember" />
+                            <label for="remember" class="toggle-label"></label>
+                        </div>
+                        </div>                
+                    </fieldset>
+                    <fieldset>
+                        <legend> Delivery Information</legend>
+                        <label class="top">Delivery Address<span class="star">*</span> <input type="text"  name="fname" required></label>
+                        <label class="top">Zip Code <span class="star">*</span> <input type="text"  name="lname" required></label>
+                    </fieldset>
+                    <div class="modal-btn">                    
+                    <button>Purchase product </button>
+                    <button class="btt" onclick="document.getElementById('form-sect').style.display='none'"> Close </button>
+                    </div>
+                    <!-- <input class="submitBtn" type="submit" value=""> -->
+
+
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

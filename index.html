@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/large.css">
     <script src="scripts/tractor.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="https://kit.fontawesome.com/d13ead34ce.js" crossorigin="anonymous"></script>
+
+
 
 </head>
 <body>
@@ -15,11 +20,14 @@
         <nav>
             <button id="hamburger"><span>&#9776;</span> <span>X</span> </button> 
             <ul id="navLink">
-                <li><a href="">Offer</a></li>
-                <li><a href="">Product</a></li>
+                <li><a href="/#offer">Offer</a></li>
+                <li><a href="#product-sect">Product</a></li>
                 <li><a href="">Resources</a></li>
                 <li><a href="">Article</a></li>           
             </ul>
+            <a href="cart.html">
+                <i   id="cartIcon"  class="fa-solid fa-cart-shopping"></i>
+            </a>
         </nav>
         
         <div class="header-img">
@@ -32,7 +40,7 @@
                     <img id="sl" src="images/bg6.jpg" alt=" fruit image">                    
                 </div>
             </div>
-            <h1>The solution you need for success</h1>
+            <h1 class="hea">The solution you need for success</h1>
         </div>        
     </header>
     <main class="main-container">
@@ -43,14 +51,14 @@
                 safety concerns. Thats why having the right partner makes the difference. Caterpillar offers a full line of industry-leading equipment, a local dealer support
                 network and the latest technology. We are here to help you tackle every task as you build a successful business.</p>
         </div>
-        <div class="offer">        
+        <div id="offer" class="offer">        
         <h2> offer</h2>
         <div class="line"> </div>
         <div class="offer-section">
             <section class="offer-sect">
                 <div class="sect">
                     <h3>The Great Payback Event </h3>
-                <div class="line"> </div>
+                    <div class="line"> </div>
                 <p>The Great Payback Event offers new machine buyers a fuel or
                     finance payback with a Customer Value Agreement included. If
                     you are in the market for the products below, be sure to check out
@@ -67,7 +75,7 @@
                     <img src="images/figure2.png" alt="figure1 image" loading="lazy">
                 </div>
                 <div class="sect">
-                    <h3>0% for 36 months. $0 down. 0 hassle.
+                    <h3 class="hes">0% for 36 months. $0 down. 0 hassle.
                         + up to $500 USD toward a Cat® CVA.*</h3>
                     <div class="line"> </div>
                     <p>his is your world. And these, these are your savings: Score 0% for 36
@@ -105,12 +113,14 @@
             </section>
         </div>
     </div>
-        <div class="product-sect">
-            <h3> Products to Support Your Industry</h3>
+        <div id="product-sect" class="product-sect">
+            <div class="pro">
+                <h3> Products to Support Your Industry</h3>
             <div class="line"> </div>
             <p>When you purchase a Cat machine, its the start of a lasting partnership. Our machines are built to handle any job with the fuel  efficiency you need to boost your
             bottom line. Trust the support of our Global Dealer Network, which can help you with parts, service and guidance — any timeyou need it. And if it ever comes time to
             sell, our machines retain their value so you get top dollar in trade and resale. Explore our full line of equipment today.</p>
+            </div>            
             <div id="tractor-sect">
                 
             </div>
@@ -121,10 +131,10 @@
             <p>Maximize your purchase by finding the work tools, on and offboard technologies and services that will take your machine ownership to the next level.</p>
             <div class="article-sect">
                 <div class="art-sect">
-                    <div>
-                        <img src="images/teaser1.png" alt="teaser image" >
+                    <div class="art-sect-img">
+                        <img src="images/Frame 12.png" alt="teaser image" >
                     </div>
-                    <div class="art">
+                    <div class="art1">
                     <h3> Attachments </h3>
                     <div class="line"> </div>
                     <p>We know the work can change day to day.
@@ -133,14 +143,14 @@
                         machine has the versatility to do more.
                         Browse over 35 types of Cat attachments for
                         the construction and paving industry.</p>
-                    <button> <a href=""> See work tools</a></button>
+                    <button  class="art-btn1"> <a href=""> See work tools</a></button>
                     </div>                    
                 </div>
                 <div class="art-sect">
-                    <div>
-                        <img src="images/teaser2.png" alt="teaser image">
+                    <div class="art-sect-img">
+                        <img src="images/Frame 10.png" alt="teaser image">
                     </div>
-                    <div class="art">
+                    <div class="art2">
                     <h3>Technology</h3>                        
                     <div class="line"> </div>
                     <p>Whether you're looking to improve
@@ -148,15 +158,15 @@
                         safety for your operators, onbaord and
                         offboard technology solutions can help you
                         achieve results.</p>
-                    <button><a href="">Get Connected</a></button>
+                    <button  class="art-btn2"><a href="">Get Connected</a></button>
                     </div>
                     
                 </div>
                 <div class="art-sect">
-                    <div>
-                        <img src="images/teaser3.png" alt="teaser image">
+                    <div class="art-sect-img">
+                        <img src="images/Frame 16.png" alt="teaser image">
                     </div>
-                    <div class="art">
+                    <div class="art3">
                     <h3>Services </h3>
                     <div class="line"> </div>                        
                     <p>Put flexible solutions, including Customer
@@ -164,7 +174,7 @@
                         business. Choose from options that let you
                         do-it-yourself or have the dealer handle it for
                         you. Let's get the work done together.</p>
-                    <button><a href="">View Services</a></button>
+                    <button class="art-btn3"><a href="">View Services</a></button>
                     </div>                    
                 </div>                
             </div>

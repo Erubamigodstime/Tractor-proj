@@ -12,9 +12,21 @@ header{
 }
 nav{
     background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    /* z-index: 0; */
+    /* position: fixed;
+    margin-bottom: 50px;
+    z-index: 1; */
 }
-
+#cartIcon{
+    font-size: 1.9rem;    
+    color: black ;
+    
+}
 nav ul{
     list-style-type: none;
     padding: 0;
@@ -69,14 +81,8 @@ nav ul.open{
     overflow: hidden;
     position: relative;
 }
-/* .header-img > h1::before{
-    color: whitesmoke;
-    font-weight: 800;    
-      
 
-    
-} */
-/* .slider-container::before {
+ .slider-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -84,11 +90,11 @@ nav ul.open{
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 8), rgba(0, 0, 0, 0));
-    z-index: 1;
-  } */
+    z-index: 0;
+  } 
 
 .header-img > h1{
-    color:black;
+    color:white;
     font-weight: 800;    
     position: absolute;    
     top:200px;
@@ -110,7 +116,7 @@ main{
     margin: 0 auto;
 }
 p{
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 .header-text h2{
@@ -128,7 +134,7 @@ p{
 }
 .header-text p{
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
 }
 .header-text{
     margin-bottom: 30px;
@@ -146,9 +152,10 @@ p{
 }
 .offer-sect{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;    
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .offer-sect .offer-img img{
     width: 100%;
@@ -162,27 +169,30 @@ p{
 
 }
 .offer-img {
-    width: 600px;
+    width: 320px;
 }
 .sect{
-    width: 600px;
+    width: 320px;
     margin-top: 50px;
 }
 .offer-sect p{
-    margin-left: 50px;
-    margin-right: 40px;
+    margin-left: 30px;  
+    
+    max-width: 100%;
+    width: 290px;
 }
 .sect h3{
-    margin-left: 50px;
-    margin-right: 40px;
+    margin-left: 30px;    
     margin-bottom: 20px;
 }
-.sect .line, .sect button{
-    margin-left: 50px;
-    margin-right: 40px;
+.sect .line{
+    margin-left: 40px;
+   
 }
 
-
+.hes{
+    margin-top: -20px;
+}
 button{
     padding: 10px;
     font-size: 1.1rem;
@@ -193,22 +203,32 @@ button{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
     border: none;
+    cursor: pointer;
 }
 
 .sect .butt1{
-    margin-top: 70px;
-    margin-left: 300px
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
     
 }
 .sect .butt{
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left:60px ;
 }
-#tractor-sect, #cart{ 
+.product-sect{
+    box-shadow:  0px  10px  10px 5px #999393 ;
+
+}
+.pro{
+    margin-left: 15px;
+}
+#tractor-sect, #cart, #tractor-carts{ 
     background-color: #5b5a5a;
-    margin-top: 10px;       
-	margin-left: 1rem;
+    margin-top: 10px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
    
 	
 	
@@ -219,7 +239,7 @@ button{
 }
 .sector{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 5px;
     margin-bottom: 20px;
 
 }
@@ -229,4 +249,232 @@ button{
 }
 .product-sect{
     background-color:#5b5a5a;
+}
+.tract-button{
+    width: 150px;
+    padding: 5px;
+}
+
+/************** cart page **************/
+
+
+.cart-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btt{
+    background-color: #858888;
+}
+form label{
+    font-size: 1.3rem;
+    color:#5b5a5a;
+    font-weight: bold;
+}
+form label.top input{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;    
+    background-color: rgba(0, 0,0,0.1);
+}
+form input.submitBtn{
+    border: none;
+    background-color:#009DCF;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .60rem 1.5rem;
+    margin-bottom: 20px;
+    margin: 0 0 1rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    text-align: center;
+}
+form fieldset{    
+    margin: 2rem 0;
+    border: 1px solid #333D29;
+    border-radius: 10px;
+    padding: 0.6rem;
+}
+form legend{
+    color: #333D29;
+    margin: 0 1rem;
+    padding: 0 5rem;
+    font-weight: bold;
+}
+.toggle {
+    display:flex;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:#5b5a5a;
+    margin-left: 10px;
+  }
+  
+.toggle-label {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color:#009DCF ;
+    border-radius: 50%;
+    transition: left 0.2s;
+  }
+  
+form input.box{
+    visibility: hidden;
+  }
+  
+form input.box:checked + .toggle-label {
+    left: 32px;
+  }
+.remember-me{
+    display: flex;
+    gap: 9.2rem;
+    
+}
+.star{
+    color: red;
+}
+.form-sect{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0%;
+    left:30%;
+    height: fit-content;    
+    width: 600px;     
+    overflow: auto;
+    background-color:#F8F8F8;
+    box-shadow:  0px  10px  10px 5px #bfb8b8 ;    
+    margin-top: 65px;
+  }
+  .modal-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/************** Back to main Page **************/
+.added-value-sect{
+    margin-top: 30px;
+}
+.article-sect{    
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.art-sect{
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.art-sect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 5), rgba(71, 70, 70, 0));
+    z-index: 0;
+}
+.art-sect-img img{
+    width: 100%;
+    height: 100%;
+}
+.art-sect-img{
+    width: 300px;
+    height: 400px;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+
+}
+.art1, .art3,.art2{
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    color: #fff;
+    width: 330px;
+    max-width: 100%;
+
+}
+ 
+.art-btn1{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.art-btn2{
+    margin-top: 55px;
+    margin-left: 40px;
+
+}
+.art-btn3{
+    margin-top: 55px;
+    margin-left: 40px;
+
+}
+
+.article-section{
+    border: #009DCF solid 7px;
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow:  0px  10px  10px 5px #bfb8b8;  
+    justify-content: center;  
+    align-items: center;
+
+}
+.artticle{
+    /* overflow: hidden; */
+    max-width: 100%;
+    margin-left: 10px;
+}
+.artticle p{
+    margin-bottom: 10px;
+    
+}
+.artticle button{
+    margin-left: 50px;
+   
+}
+.art-img{
+    margin-top: 10px;
+    width: 320px;
+    max-width: 100%;
+}
+.art-img img{
+    width: 100%;
+    height: 100%;
+
 }
