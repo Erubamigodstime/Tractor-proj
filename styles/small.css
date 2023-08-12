@@ -163,6 +163,7 @@ p{
 .offer-section{
     margin-top: 60px;
 }
+
 .offer-sect{
     display: flex;
     flex-direction: column;    
@@ -183,23 +184,26 @@ p{
 }
 .offer-img {
     width: 320px;
+    max-width: 100%;
 }
-.sect{
-    width: 320px;
+.sect{   
+    width: 370px;
+    max-width: 100%;
     margin-top: 50px;
 }
 .offer-sect p{
-    margin-left: 30px;  
-    
+    margin-left: 10px;    
     max-width: 100%;
-    width: 290px;
+    /* width: 250px; */
 }
 .sect h3{
-    margin-left: 30px;    
+    margin-left: 10px;    
     margin-bottom: 20px;
+    max-width: 100%;
+
 }
 .sect .line{
-    margin-left: 40px;
+    margin-left: 10px;
    
 }
 
@@ -221,14 +225,14 @@ button{
 
 .sect .butt1{
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 10px;
     margin-bottom: 10px;
     
 }
 .sect .butt{
     margin-top: 30px;
     margin-bottom: 10px;
-    margin-left:60px ;
+    margin-left:10px ;
 }
 .product-sect{
     box-shadow:  0px  10px  10px 5px #999393 ;
@@ -269,9 +273,15 @@ button{
 }
 
 /************** cart page **************/
-
+.cart-page-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
 .cart-main{
     margin-top: 80px;
+    
 }
 
 .cart-text{
@@ -450,16 +460,16 @@ form input.box:checked + .toggle-label {
  
 .art-btn1{
     margin-top: 15px;
-    margin-left: 40px;
+    margin-left: 3px;
 }
 .art-btn2{
     margin-top: 55px;
-    margin-left: 40px;
+    margin-left: 3px;
 
 }
 .art-btn3{
     margin-top: 55px;
-    margin-left: 40px;
+    margin-left: 3px;
 
 }
 

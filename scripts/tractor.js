@@ -1,5 +1,6 @@
 
-let base = []
+let base = {};
+
 
 const url = "https://erubamigodstime.github.io/Tractor-proj/tractor.json";
 getTractor(url);
@@ -79,12 +80,11 @@ function displayTractor(tractors){
             }, 500);
             setTimeout(() => {
                 cartIcon.style.transform = 'scale(.8, .8)';
-                cartIcon.style.transitionDuration =".3s";
-                // cartIcon.style.backgroundColor ="white";
+                cartIcon.style.transitionDuration =".3s";                
                 cartIcon.style.borderRadius = "0";
             }, 700);
             cartIcon.style.borderRadius = "30px";
-            // cartIcon.style.backgroundColor ="#009DCF";;
+            
         });
         
 

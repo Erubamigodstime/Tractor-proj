@@ -46,6 +46,17 @@
         max-width: 100%;
         width: 290px;
     }
+    .sect .butt1{
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+        
+    }
+    .sect .butt{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left:60px ;
+    }
     #tractor-sect, #cart, #tractor-carts{              
         margin-left: 1rem;
 	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
