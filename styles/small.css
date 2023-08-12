@@ -12,15 +12,21 @@ header{
 }
 nav{
     background-color:whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    /* position: relative; */
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
     width: 100%;
-    /* z-index: 0; */
-    /* position: fixed;
-    margin-bottom: 50px;
-    z-index: 1; */
+
+    
+   
+}
+.cat{
+    position: absolute;
+    top: 20px;
+    left: 85%;
+
 }
 #cartIcon{
     font-size: 1.9rem;    
@@ -32,11 +38,13 @@ nav ul{
     padding: 0;
     margin: 0;
 }
-nav button{
+nav button{ 
+    text-align: left;   
     margin: .2rem 2vw;
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    /* border: #009DCF solid 5px; */
 }
 
 nav ul li a{
@@ -60,6 +68,7 @@ nav ul{
 }
 nav ul.open{
     display: block;
+    
 }
 
 
@@ -92,7 +101,11 @@ nav ul.open{
     background: linear-gradient(to right, rgba(0, 0, 0, 8), rgba(0, 0, 0, 0));
     z-index: 0;
   } 
+.header-img{
+    margin-bottom: 40px;
+    box-shadow: 0 30px  #009DCF;
 
+}
 .header-img > h1{
     color:white;
     font-weight: 800;    
@@ -257,6 +270,9 @@ button{
 
 /************** cart page **************/
 
+.cart-main{
+    margin-top: 80px;
+}
 
 .cart-text{
     display: flex;
@@ -268,6 +284,8 @@ button{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
 }
 .btt{
     background-color: #858888;
