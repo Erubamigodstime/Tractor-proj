@@ -1,5 +1,5 @@
-
-let base = {};
+let base = [];
+let bases = [];
 
 
 const url = "https://erubamigodstime.github.io/Tractor-proj/tractor.json";
@@ -72,6 +72,9 @@ function displayTractor(tractors){
             
             base = window.localStorage.getItem("data");
             base = JSON.parse(base);
+            if (base === null) {
+                base = [];
+            }
             base.push(tractorDetails);
             window.localStorage.setItem("data", JSON.stringify(base));            
             setTimeout(() => {
@@ -86,7 +89,6 @@ function displayTractor(tractors){
             cartIcon.style.borderRadius = "30px";
             
         });
-        
 
 
 
