@@ -174,5 +174,13 @@
         background-color: #b5adad;   
     
     }
+    .covid{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .article-section{
+        width: 70%;
+        margin: 0 auto;
+    }
 
 }
