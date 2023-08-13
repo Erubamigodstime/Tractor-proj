@@ -13,6 +13,11 @@
     p{
         font-size: 1.1rem;
     }
+    .offer, .header-text{
+        width: 70%;
+        margin: 0 auto;
+    
+    }
     .offer-sect{
         display: flex;
         flex-direction: row;
@@ -54,16 +59,18 @@
         margin-bottom: 10px;
         margin-left:60px ;
     }
-    #tractor-sect, #cart, #tractor-carts{              
+    #tractor-sect{              
         margin-left: 1rem;
-	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-    
-      
-        
+        display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
         
         
     } 
+    .product-sect{
+        width: 70%;
+        margin: 0 auto;
+    
+    }
 
     .article-sect{    
         display: grid;
@@ -78,6 +85,11 @@
         max-width: 100%;
     
     
+    }
+    .added-value-sect{
+        margin-top: 30px;
+        width: 70%;
+        margin: 0 auto;
     }
     .art-sect::before {
         content: "";
@@ -136,6 +148,30 @@
     .art-img img{
         width: 100%;
         height: 100%;
+    
+    }
+    .footers{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .footer-text1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .footer-text2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .last-segment{
+        margin: 0 auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 50px;
+    }
+    footer{
+        background-color: #b5adad;   
     
     }
 

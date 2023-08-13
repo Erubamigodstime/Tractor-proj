@@ -1,4 +1,4 @@
-let tractorCart = document.getElementById('tractor-carts');
+let tractorCart = document.getElementById('tractor-sect');
 let text = document.getElementById('text');
 
 let cart = JSON.parse(localStorage.getItem("data")) || [];
