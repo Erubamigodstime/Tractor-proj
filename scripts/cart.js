@@ -42,8 +42,7 @@ function diaplayCartItems(arrays) {
         textDiv.appendChild(price);
         textDiv.appendChild(btn);
 
-        sects.appendChild(imgDiv);
-        
+        sects.appendChild(imgDiv);        
         sects.appendChild(textDiv);
         tractorCart.appendChild(sects);
         btn.style.cursor ="pointer";
